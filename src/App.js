@@ -15,6 +15,7 @@ function App() {
     <>
       {/* 주석은 화면에 보이지 않습니다 */}
       <Hello name="react" color="red" />
+      <Hello color="pink" />
       <div style={style}>{name}</div>
       <div className="gray-box"></div>
     </>

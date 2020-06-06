@@ -8,25 +8,7 @@ function User({ user }) {
   );
 }
 
-function UserList() {
-  const users = [
-    {
-      id: 1,
-      username: 'Jacob',
-      email: 'jw.kim@datadriven.kr',
-    },
-    {
-      id: 2,
-      username: 'Dana',
-      email: 'dy.kim@datadriven.kr',
-    },
-    {
-      id: 3,
-      username: 'Ian',
-      email: 'ys.park@datadriven.kr',
-    },
-  ];
-
+function UserList({ users }) {
   return (
     <div>
       {users.map((user, index) => (

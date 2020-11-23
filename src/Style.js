@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, ThemeProvider } from 'styled-components';
 import Button from './components/Button';
 
 const Circle = styled.div`
@@ -25,9 +25,19 @@ const AppBlock = styled.div`
 
 function Style() {
   return (
-    <AppBlock>
-      <Button>BUTTON</Button>
-    </AppBlock>
+    <ThemeProvider
+      theme={{
+        palette: {
+          blue: '#228be6',
+          gray: '#495057',
+          pink: '#f06595',
+        },
+      }}
+    >
+      <AppBlock>
+        <Button>BUTTON</Button>
+      </AppBlock>
+    </ThemeProvider>
   );
 }
 

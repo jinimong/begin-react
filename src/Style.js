@@ -36,6 +36,8 @@ function Style() {
     >
       <AppBlock>
         <Button>BUTTON</Button>
+        <Button color="gray">BUTTON</Button>
+        <Button color="pink">BUTTON</Button>
       </AppBlock>
     </ThemeProvider>
   );

@@ -1,6 +1,7 @@
 import React, { useMemo, useReducer } from 'react';
 import UserList from './UserList';
 import CreateUser from './CreateUser';
+import Style from './Style';
 
 function countActiveUsers(users) {
   console.log('활성 사용자 수를 세는 중...');
@@ -78,6 +79,7 @@ function App() {
       <CreateUser />
       <UserList users={users} />
       <div>활성 사용자 수 : {count}</div>
+      <Style />
     </UserDispatch.Provider>
   );
 }

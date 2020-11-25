@@ -107,6 +107,7 @@ function Style() {
         onConfirm={onConfirm}
         onCancel={onCancel}
         visible={dialog}
+        disappear
       >
         데이터를 정말로 삭제하시겠습니까?
       </Dialog>
